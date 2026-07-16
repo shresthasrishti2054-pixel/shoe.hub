@@ -1,1 +1,256 @@
-different shoe varieties
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paila Footwear | Nepal's Family Shoe Store</title>
+    <style>
+        :root {
+            --primary: #d32f2f;
+            --dark: #212121;
+            --light: #f5f5f5;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: white;
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo h1 {
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            margin-left: 1.5rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.runrepeat.com/storage/gallery/product_primary/41066/new-balance-1080-v-15-24327575-main.jpg') center/cover;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .hero h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        .age-section {
+            margin-bottom: 4rem;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            border-left: 5px solid var(--primary);
+            padding-left: 0.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-container {
+            width: 100%;
+            height: 250px;
+            background-color: #eaeaea;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1.5rem;
+        }
+        .card-tag {
+            background-color: #ffebee;
+            color: var(--primary);
+            font-size: 0.75rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .price {
+            font-size: 1.2rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: var(--dark);
+            color: white;
+            padding: 0.7rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: var(--primary);
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>पाईला <span>Footwear</span></h1>
+        </div>
+        <nav>
+            <a href="#kids">Kids</a>
+            <a href="#teens">Teens</a>
+            <a href="#adults">Adults</a>
+            <a href="#seniors">Seniors</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Comfort for Every Generation</h2>
+        <p>Quality footwear tailored for all age groups across Nepal.</p>
+    </div>
+
+    <div class="container">
+
+        <!-- KIDS SECTION -->
+        <section id="kids" class="age-section">
+            <h2 class="section-title">Kids Variety (Ages 2 - 10)</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="https://entail-assets.com/firstwalkers/fit-in/440x440/entailai_multiColoured_Sneakers_for_kids_aebcb1d8528b4dc1afa58ddfbbde09ba-1733487569078.webp" alt="Colorful Kids Light-up Sneakers">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Playtime</span>
+                        <h3>Junior Vibrant Sneakers</h3>
+                        <p>Lightweight, high-traction shoes made for active playground steps.</p>
+                        <div class="price">रू. 1,850</div>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEENS SECTION -->
+        <section id="teens" class="age-section">
+            <h2 class="section-title">Teens & Youth Variety (Ages 11 - 19)</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="https://www.lindsaysilberman.com/wp-content/uploads/2023/04/white-sneakers-outfits-1140x1425.jpg" alt="Trendy Lifestyle White Sneakers">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Trending</span>
+                        <h3>Urban Street White Sneakers</h3>
+                        <p>Classic, minimalist design perfect for college wear and casual hangouts.</p>
+                        <div class="price">रू. 3,200</div>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADULTS SECTION -->
+        <section id="adults" class="age-section">
+            <h2 class="section-title">Adults Variety (Ages 20 - 55)</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="https://holloshoe.com/cdn/shop/files/Handcrafted_-Patina_-Mixed-Media_-Oxford-4.jpg?v=1779692097&width=533" alt="Premium Leather Formal Dress Shoes">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Formal / Office</span>
+                        <h3>Classic Leather Oxfords</h3>
+                        <p>Genuine leather dress shoes designed for office meetings and ceremonies.</p>
+                        <div class="price">रू. 5,499</div>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SENIORS SECTION -->
+        <section id="seniors" class="age-section">
+            <h2 class="section-title">Seniors / Orthopedic Comfort (Ages 56+)</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="https://cdn.runrepeat.com/storage/gallery/product_primary/41066/new-balance-1080-v-15-24327575-main.jpg" alt="Ultra Cushioned Support Walking Shoes">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Orthopedic Comfort</span>
+                        <h3>Cushioned Arch-Support Walkers</h3>
+                        <p>Extra-thick foam soles built specifically to reduce joint pressure during morning walks.</p>
+                        <div class="price">रू. 4,650</div>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 पाईला Footwear Nepal. All prices are inclusive of local taxes.</p>
+    </footer>
+
+</body>
+</html>
